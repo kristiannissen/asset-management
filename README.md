@@ -2,7 +2,7 @@
 Asset Management System
 
 ### Use Case
-I regurlarly purchase various hardware for my coworkers and need a way to store the information about it that I may later need in case of a claim or need for support as well as renewing and keep updated.
+I regurlarly purchase various types of hardware for my coworkers and need a way to store the information about it that I may later need in case of a claim or need for support as well as renewing and keep updated.
 
 ## Define Asset/Structs
 ```
