@@ -17,8 +17,7 @@ type (
     Name string
   }
   Asset struct {
-    Name string
-    SN string
+    Name, Type, SN string
     Warranty date
     SupportType Support
     EOL bool
