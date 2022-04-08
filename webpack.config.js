@@ -1,34 +1,34 @@
-const path = require("path")
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
   entry: {
-    index: "./src/index.js"
+    index: "./src/index.js",
   },
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "public"),
-    clean: true
+    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Hello Kitty",
-      template: "./src/index.html"
-    })
+      template: "./src/index.html",
+    }),
   ],
   devtool: "inline-source-map",
   devServer: {
     static: "./public",
-    port: 3000
+    port: 3000,
   },
   module: {
     rules: [
       {
         test: /\.(js)$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
-      }
-    ]
-  }
-}
+        use: ["babel-loader"],
+      },
+    ],
+  },
+};
