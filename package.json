@@ -16,9 +16,9 @@
     "webpack-dev-server": "^4.8.1"
   },
   "scripts": {
-    "build": "npx webpack --config --color webpack.config.js",
-    "watch": "npx webpack --config webpack.config.js --watch --color",
-    "serve": "npx webpack serve --open",
+    "build": "webpack --config --color webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch --color",
+    "serve": "webpack serve --open --env port=3000",
     "prettier": "./node_modules/prettier/bin-prettier.js --write \"**/*.(js|css|html)\""
   }
 }
