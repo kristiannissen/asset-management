@@ -6728,8 +6728,9 @@
                 case OffscreenLane:
                   return OffscreenLane;
 
-                default: // This shouldn't be reachable, but as a fallback, return the entire bitmask.
+                default:
                   {
+                    // This shouldn't be reachable, but as a fallback, return the entire bitmask.
                     error(
                       "Should have found matching lanes. This is a bug in React."
                     );
