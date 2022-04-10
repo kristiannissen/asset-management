@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WriteFilePlugin = require("write-file-webpack-plugin");
+const WorkboxPlugin = require("workbox-webpack-plugin");
 
 module.exports = (env) => {
   return {
@@ -21,7 +22,12 @@ module.exports = (env) => {
         filename: "index.html",
         template: "src/template.html",
       }),
-        new WriteFilePlugin()
+        new WriteFilePlugin(),
+        new WorkboxPlugin.GenerateSW({
+            clientsClaim: true,
+            skipWaiting: true,
+            maximumFileSizeToCacheInBytes: 5000000
+        })
     ],
     devtool: "inline-source-map",
     devServer: {
