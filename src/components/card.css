@@ -1,0 +1,6 @@
+.card__outer {
+    @apply flex justify-center;
+}
+.card__inner {
+    @apply block p-6 rounded-lg shadow-lg bg-white max-w-sm;
+}

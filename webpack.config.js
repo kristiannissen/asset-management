@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const WriteFilePlugin = require("write-file-webpack-plugin");
 
 module.exports = (env) => {
   return {
@@ -20,6 +21,7 @@ module.exports = (env) => {
         filename: "index.html",
         template: "src/template.html",
       }),
+        new WriteFilePlugin()
     ],
     devtool: "inline-source-map",
     devServer: {
@@ -39,7 +41,7 @@ module.exports = (env) => {
         },
         {
           test: /\.css$/,
-          use: ["postcss-loader"],
+          use: ["style-loader", "css-loader", "postcss-loader"],
         },
       ],
     },
