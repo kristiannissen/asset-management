@@ -5,6 +5,7 @@
 import React, { useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
+import { BrowserRouter } from "react-router-dom";
 // Import custom code
 import App from "./app";
 
@@ -12,7 +13,9 @@ const rootElm = document.querySelector("#app-root");
 const root = createRoot(rootElm);
 root.render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );
 
