@@ -6,13 +6,13 @@ import React from "react";
 // Tailwind
 import "./styles/tailwind.css";
 // Components
-import Shell from "./components/shell";
+import Header from "./components/header";
 import Spinner from "./components/spinner";
 
 const App = ({ children }) => {
   return (
     <>
-      <Shell />
+      <Header />
       <main className="main__content">{children}</main>
     </>
   );

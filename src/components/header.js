@@ -3,12 +3,12 @@
  */
 import React, { useEffect } from "react";
 // Css
-import "./shell.css";
+import "./header.css";
 import "./../styles/button.css";
 // Custom hooks
 import { useNetworkInformation } from "../hooks";
 
-const Shell = () => {
+const Header = () => {
   const [network, setNetwork] = useNetworkInformation();
 
   useEffect(() => {}, []);
@@ -29,4 +29,4 @@ const Shell = () => {
   );
 };
 
-export default Shell;
+export default Header;
