@@ -1,0 +1,11 @@
+.header {
+}
+.header__nav {
+  @apply shadow-md py-2 bg-white relative flex items-center w-full justify-between;
+}
+.header__nav_items {
+  @apply px-6 w-full flex flex-wrap items-center justify-between;
+}
+.header__nav_items_elm {
+  @apply flex items-center;
+}

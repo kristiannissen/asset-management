@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+
+.main__content {
+  @apply w-full h-screen;
+}
