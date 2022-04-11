@@ -18,7 +18,7 @@ const Header = () => {
       <nav className="header__nav">
         <div className="header__nav_items">
           <div className="header__nav_items_elm">
-            <button className="btn">Hey</button>
+            <button className="btn">Home</button>
           </div>
           <div className="header__nav_items_elm self-end align-middle">
             {network.effectiveType}

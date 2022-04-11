@@ -19,7 +19,7 @@ module.exports = (env) => {
       new HtmlWebpackPlugin({
         hash: true,
         showErrors: true,
-        template: "./src/template.html"
+        template: "./src/template.html",
       }),
       new WriteFilePlugin(),
       /*new WorkboxPlugin.GenerateSW({
