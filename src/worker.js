@@ -1,4 +1,4 @@
 /**
  *
  */
-self.onmessage = () => console.log("Hello Pussy")
+self.onmessage = () => console.log("Hello Pussy");

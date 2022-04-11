@@ -22,12 +22,12 @@ module.exports = (env) => {
         filename: "index.html",
         template: "src/template.html",
       }),
-        new WriteFilePlugin(),
-        new WorkboxPlugin.GenerateSW({
-            clientsClaim: true,
-            skipWaiting: true,
-            maximumFileSizeToCacheInBytes: 5000000
-        })
+      new WriteFilePlugin(),
+      new WorkboxPlugin.GenerateSW({
+        clientsClaim: true,
+        skipWaiting: true,
+        maximumFileSizeToCacheInBytes: 5000000,
+      }),
     ],
     devtool: "inline-source-map",
     devServer: {
