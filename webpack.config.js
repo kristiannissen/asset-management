@@ -23,11 +23,11 @@ module.exports = (env) => {
         template: "src/template.html",
       }),
       new WriteFilePlugin(),
-      new WorkboxPlugin.GenerateSW({
+      /*      new WorkboxPlugin.GenerateSW({
         clientsClaim: true,
         skipWaiting: true,
         maximumFileSizeToCacheInBytes: 5000000,
-      }),
+      }),*/
     ],
     devtool: "inline-source-map",
     devServer: {

@@ -10,11 +10,11 @@ import "./styles/shell.css";
 // Custom Components
 import Card from "./components/card";
 // Demo web worker
-const worker = new Worker(new URL("./worker.js", import.meta.url));
+// const worker = new Worker(new URL("./worker.js", import.meta.url));
 
 const App = () => {
   useEffect(() => {
-    worker.postMessage({ name: "Pussy" });
+    // worker.postMessage({ name: "Pussy" });
   });
   return (
     <div>
