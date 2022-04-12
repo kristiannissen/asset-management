@@ -2,10 +2,16 @@
  *
  */
 import React from "react";
-import {ListItem} from "."
+import { ListItem } from ".";
 
-const List = ({data}) => {
-  return (<div>{data.map(item => <ListItem {...item} />)}</div>);
-}
+const List = ({ data }) => {
+  return (
+    <div>
+      {data.map((item) => (
+        <ListItem {...item} />
+      ))}
+    </div>
+  );
+};
 
 export default List;

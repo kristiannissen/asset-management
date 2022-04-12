@@ -1,9 +1,7 @@
 .list__item {
-  @apply py-1.5 flex flex-row;
+  @apply py-1.5 flex;
 }
 .list__item_title {
-
 }
 .list__item_content {
-
 }
