@@ -6,7 +6,7 @@ module.exports = (env) => {
     mode: "development",
     entry: {
       index: "./src/index.js",
-        "service-worker": "./src/service-worker.js",
+      "service-worker": "./src/service-worker.js",
     },
     output: {
       filename: "[name].js",
@@ -26,7 +26,7 @@ module.exports = (env) => {
       static: {
         directory: path.resolve(__dirname, "./public"),
       },
-      port: env.port
+      port: env.port,
     },
     module: {
       rules: [

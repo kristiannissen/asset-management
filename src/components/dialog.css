@@ -1,0 +1,6 @@
+.dialog {
+  @apply fixed flex w-full bottom-0 left-0;
+}
+.dialog__content {
+  @apply p-1.5;
+}

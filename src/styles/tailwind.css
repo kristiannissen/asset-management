@@ -3,6 +3,10 @@
 @tailwind utilities;
 @tailwind variants;
 
+html,
+body {
+  @apply h-full;
+}
 .main__content {
-  @apply w-full h-screen;
+  @apply w-full;
 }

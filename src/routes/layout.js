@@ -27,7 +27,9 @@ const Layout = () => {
           </div>
         </nav>
       </header>
-      <Outlet />
+      <main className="main__content">
+        <Outlet />
+      </main>
     </>
   );
 };
