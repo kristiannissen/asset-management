@@ -14,7 +14,8 @@ const Dialog = () => {
     return (
       <div className="dialog" role="dialog" ref={dialogElm}>
         <div className="dialog__content">
-          <button className="btn">Install</button>
+          <button className="btn__primary_variant">Install</button>
+          <button className="btn__secondary_variant">Cancel</button>
         </div>
       </div>
     );

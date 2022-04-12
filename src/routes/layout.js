@@ -17,7 +17,7 @@ const Layout = () => {
         <nav className="header__nav">
           <div className="header__nav_items">
             <div className="header__nav_items_elm">
-              <Link className="btn" to="/">
+              <Link className="btn__primary" to="/">
                 Home
               </Link>
             </div>

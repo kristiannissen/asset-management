@@ -8,5 +8,5 @@ body {
   @apply h-full;
 }
 .main__content {
-  @apply w-full;
+  @apply px-2;
 }
